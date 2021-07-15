@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    {{- partialCached "head/favicons.html" . -}}
+    {{- partialCached "head/metadata.html" . -}}
+    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    {{- partialCached "head/site-style.html" . -}}
+    <body>
+        <div id="content">
+        {{- block "main" . }}{{- end }}
+        </div>
+    </body>
+</html>
