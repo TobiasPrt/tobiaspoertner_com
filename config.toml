@@ -1,0 +1,19 @@
+baseURL = "http://tobiaspoertner.com/"
+languageCode = "en-us"
+title = "My Personal Portfolio"
+theme = "tobiaspoertner"
+
+# Disable all services for now
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
