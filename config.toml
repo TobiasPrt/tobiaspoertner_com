@@ -1,7 +1,7 @@
 baseURL = "http://tobiaspoertner.com/"
 languageCode = "en-us"
 title = "My Personal Portfolio"
-theme = "tobiaspoertner"
+theme = "Tobiaspoertner_com_theme"
 
 # Disable all services for now
 [privacy]
