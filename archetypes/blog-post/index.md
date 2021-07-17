@@ -2,7 +2,14 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
-post: false
-description:
+author: "Tobias Pörtner"
+description: 
 keywords:
+tags:
 ---
+
+Summary
+
+<!--more-->
+
+First Paragraph

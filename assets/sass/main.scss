@@ -1,3 +1,26 @@
-html {
-    background-color: black;
+@charset 'utf-8';
+
+/* Import abstracts. */
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/helper";
+
+/* Import base styles. */
+@import "base/reset";
+@import "base/typography";
+
+/* Import layout styles. */
+@import "layout/main";
+@import "layout/header";
+@import "layout/footer";
+
+/* Import component styles. */
+@import "components/burger";
+@import "components/nav";
+
+
+/* For development: */
+
+* {
+    outline: .5px dashed red;
 }

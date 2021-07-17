@@ -1,0 +1,33 @@
+/* BURGER MENU BUTTON */
+
+@use "../abstracts" as *;
+@use "../base" as *;
+
+.burger {
+    width: 18px;
+    height: 8px;
+    position: relative;
+    display: block;
+    margin: -4px auto 0;
+    top: 50%;
+
+    &__bar {
+        @include bg($black);
+        width: 100%;
+        height: 1px;
+        display: block;
+        position: relative;
+        transition: all 0.3s ease;
+        transition-delay: 0s;
+
+        &--top {
+            @extend .burger__bar;
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        &--bottom {
+            @extend .burger__bar;
+            transform: translateY(6px) rotate(0deg);
+        }
+    }
+}

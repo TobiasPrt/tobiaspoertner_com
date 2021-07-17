@@ -1,0 +1,16 @@
+<nav class="nav">
+    <ul class="nav__list">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+                <li class="nav__listitem">
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+        {{ end }}
+    </ul>
+    <div class="nav__burger">
+        <div id="burger" class="burger">
+            <div class="burger__bar--top"></div>
+            <div class="burger__bar--bottom"></div>
+        </div>
+    </div>
+</nav>

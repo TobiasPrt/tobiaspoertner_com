@@ -1,9 +1,9 @@
 ---
-title: "Blog - Tobias Pörtner"
+title: "About - Tobias Pörtner"
 draft: false
 post: false
 description:
 keywords:
 ---
 
-This is the blog page.
+This is the about page.

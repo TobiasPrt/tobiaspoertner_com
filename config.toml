@@ -2,6 +2,35 @@ baseURL = "http://tobiaspoertner.com/"
 languageCode = "en-us"
 title = "Personal Website of Tobias Pörtner"
 
+# Generated navigation menu
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+        weight = 2
+    [[menu.main]]
+        identifier = "work"
+        name = "Work"
+        url = "/work"
+        weight = 3
+    [[menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/blog"
+        weight = 4
+    [[menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/contact"
+        weight = 5
+        
+
 # Disable all services for now
 [privacy]
   [privacy.disqus]

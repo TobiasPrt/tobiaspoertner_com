@@ -1,0 +1,28 @@
+{{ $image := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+
+
+{{ $small_jpg := $image.Resize "500x jpg" }}
+{{ $small_webp := $image.Resize "500x webp" }}
+{{ $normal_jpg := $image.Resize "800x jpg" }}
+{{ $normal_webp := $image.Resize "800x webp" }}
+
+<figure>
+    <picture>
+        <source type="image/webp"
+            srcset="
+                {{ $small_webp.RelPermalink }} 500w, 
+                {{ $normal_webp.RelPermalink }} 800w" 
+            sizes="(max-width: 556px) calc(100vw - 56px), 800px">
+        <img 
+            srcset="
+                {{ $small_jpg.RelPermalink }} 500w, 
+                {{ $normal_jpg.RelPermalink }} 800w" 
+            sizes="(max-width: 556px) calc(100vw - 56px), 800px" 
+            src="{{ $normal_jpg.RelPermalink }}"
+            alt="{{.Get `alt` }}"
+            loading="lazy"
+            decoding="async"
+            width="{{ $normal_jpg.Width }}" 
+            height="{{ $normal_jpg.Height }}">
+    </picture>
+</figure>
