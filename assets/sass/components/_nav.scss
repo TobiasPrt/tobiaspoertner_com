@@ -1,10 +1,101 @@
 /* NAVIGATION */
 
-
-@use "../abstracts" as *;
-@use "../base" as *;
-
-
 .nav {
+    display: flex;
+    justify-content: flex-end;
+
+    &__list {
+        position: absolute;
+        z-index: 100;
+        top: -100vh;
+        left: 0;
+        background-color: $black;
+        width: 100%;
+        height: 100vh;
+        transition: top .6s ease;
+        padding-top: 25vh;
+
+        @include respond('medium') {
+            position: inherit;
+            height: 2rem;
+            width: inherit;
+            background-color: $white;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 4.8rem;
+            padding: 0;
+        }
+    }
+
+    &__listitem {
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+
+        @include respond('medium') {
+            opacity: 1;
+        }
+
+    }
+
+    &__divider {
+        height: 0.5px;
+        width: 32px;
+        background-color: $dark_grey;
+        margin: 32px auto;
+        opacity: 0;
+
+        @include respond('medium') {
+            display: none;
+        }
+    }
+
+    &__link, &__link:visited {
+        color: $white;
+
+        @include respond('medium') {
+            color: $black;
+        }
+    }
+
+    &__burger {
+        z-index: 101;
+    }
+
+}
+
+/* Styles for activated mobile nav */
+.nav--active {
+    @extend .nav;
+
+    & > .nav__list {
+        top: 0;
+    }
+
+    // Target .nav__listitem and .nav__divider
+    & li {
+        animation-name: fadein;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    // From 1 to double the amount of nav items, because of dividers
+    @for $i from 1 to 10 {
+        & li:nth-child(#{$i}) {
+            animation-delay: $i * 0.08s;
+        }
+
+    }
+
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 
 }

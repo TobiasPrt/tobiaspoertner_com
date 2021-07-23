@@ -1,1 +1,10 @@
 /* CONTENT BLOCK */
+
+main {
+    // ViewportHeight - HeaderHeight - FooterHeight
+    min-height: calc(100vh - 63px - 50px);
+
+    @include respond('medium') {
+        min-height: calc(100vh - 84px - 50px);
+    }
+}

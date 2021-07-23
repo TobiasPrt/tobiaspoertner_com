@@ -1,33 +1,163 @@
 /* BURGER MENU BUTTON */
-
-@use "../abstracts" as *;
-@use "../base" as *;
-
 .burger {
-    width: 18px;
-    height: 8px;
-    position: relative;
-    display: block;
-    margin: -4px auto 0;
-    top: 50%;
+    width: 27px;
+    height: 15px;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    @include respond('medium') {
+        display: none;
+    }
 
     &__bar {
         @include bg($black);
         width: 100%;
-        height: 1px;
-        display: block;
-        position: relative;
-        transition: all 0.3s ease;
-        transition-delay: 0s;
+        height: 2px;
+        animation-fill-mode: forwards;
 
         &--top {
             @extend .burger__bar;
-            transform: translateY(0px) rotate(0deg);
         }
 
         &--bottom {
             @extend .burger__bar;
-            transform: translateY(6px) rotate(0deg);
+            transform: translateY(12px);
         }
+
     }
+
+}
+
+/* Define animation properties. */
+.burger.open {
+    animation-name: openMenuBurger;
+
+    & .burger__bar {
+        animation-duration: 0.5s;
+
+        &--top {
+            animation-name: openMenuTopBarAnimation;
+        }
+
+        &--bottom {
+            animation-name: openMenuBottomBarAnimation;
+        }
+
+    }
+
+}
+
+.burger.close {
+    animation-name: closeMenuBurger;
+
+    & .burger__bar {
+        animation-duration: 0.5s;
+
+        &--top {
+            animation-name: closeMenuTopBarAnimation;
+        }
+
+        &--bottom {
+            animation-name: closeMenuBottomBarAnimation;
+        }
+
+    }
+
+}
+
+/* Animation for the main rotation. */
+@keyframes openMenuBurger {
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+
+}
+
+@keyframes closeMenuBurger {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+/* Animation for the upper bar to rotate and move to the right. */
+@keyframes openMenuTopBarAnimation {
+    0% {
+        background-color: $black;
+    }
+
+    50% {
+        transform: translateY(0px) rotate(0deg);
+        background-color: $white;
+    }
+
+    100% {
+        transform: translateY(7px) rotate(45deg);
+        background-color: $white;
+    }
+
+}
+
+@keyframes closeMenuTopBarAnimation {
+    0% {
+        transform: translateY(7px) rotate(45deg);
+        background-color: $white;
+    }
+
+    50% {
+        transform: translateY(0px) rotate(0deg);
+        background-color: $white;
+    }
+
+    100% {
+        background-color: $black;
+    }
+
+}
+
+/* Animation for the lower bar to rotate and move to the left. */
+@keyframes openMenuBottomBarAnimation {
+    0% {
+        background-color: $black;
+    }
+
+    50% {
+        transform: translateY(12px) rotate(0deg);
+        background-color: $white;
+    }
+
+    100% {
+        transform: translateY(5px) rotate(-45deg);
+        background-color: $white;
+    }
+
+}
+
+@keyframes closeMenuBottomBarAnimation {
+    0% {
+        transform: translateY(5px) rotate(-45deg);
+        background-color: $white;
+    }
+
+    50% {
+        transform: translateY(12px) rotate(0deg);
+        background-color: $white;
+    }
+
+    100% {
+        background-color: $black;
+    }
+
 }

@@ -2,27 +2,38 @@
 
 /* Set foreground color. */
 @mixin fg($color) {
-  color: $color;
+    color: $color;
 }
 
 /* Set background color. */
 @mixin bg($color) {
-  background-color: $color;
+    background-color: $color;
 }
 
 /* Sets correct font sizes based on map and for all different breakpoints. */
 @mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
-  @each $fs-breakpoint, $fs-font-size in $fs-map {
-    @if $fs-breakpoint == null {
-      font-size: $fs-font-size;
+    @each $fs-breakpoint, $fs-font-size in $fs-map {
+        @if $fs-breakpoint == null {
+            font-size: $fs-font-size;
+        }
+
+        @else {
+            @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+                $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+            }
+
+            @media screen and (min-width: $fs-breakpoint) {
+                font-size: $fs-font-size;
+            }
+        }
     }
-    @else {
-      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
-        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
-      }
-      @media screen and (min-width: $fs-breakpoint) {
-        font-size: $fs-font-size;
-      }
+}
+
+
+@mixin respond($breakpoint) {
+    $breakpoint: map-get($breakpoints, $breakpoint);
+
+    @media only screen and (min-width: $breakpoint) {
+        @content;
     }
-  }
 }

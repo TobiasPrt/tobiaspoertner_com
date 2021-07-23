@@ -1,89 +1,31 @@
 /* TYPOGRAPHY */
 
-
 /* Font Sizes */
-$h1_fs: (
-    null: 3.2rem,
-    small: 3.2rem,
-    medium: 3.2rem,
-    large: 3.2rem,
-);
-
-$h2_fs: (
-    null: 2.8rem,
-    small: 2.8rem,
-    medium: 2.8rem,
-    large: 2.8rem,
-);
-
-$h3_fs: (
-    null: 2.0rem,
-    small: 2.0rem,
-    medium: 2.0rem,
-    large: 2.0rem,
-);
-
-$subtitle_fs: (
-    null: 2.0rem,
-    small: 2.0rem,
-    medium: 2.0rem,
-    large: 2.0rem,
-);
-
-$body_fs: (
-    null: 1.4rem,
-    small: 1.4rem,
-    medium: 1.4rem,
-    large: 1.4rem,
-);
-
-$highlight_fs: (
-    null: 1.4rem,
-    small: 1.4rem,
-    medium: 1.4rem,
-    large: 1.4rem,
-);
-
-$pretitle_fs: (
-    null: 1.2rem,
-    small: 1.2rem,
-    medium: 1.2rem,
-    large: 1.2rem,
-);
-
-$link_fs: (
-    null: 1.4rem,
-    small: 1.4rem,
-    medium: 1.4rem,
-    large: 1.4rem,
-);
-
-$label_fs: (
-    null: 1.6rem,
-    small: 1.6rem,
-    medium: 1.6rem,
-    large: 1.6rem,
-);
-
+$h1_fs: (null:3.2rem, small:3.2rem, medium:3.2rem, large:3.2rem, );
+$h2_fs: (null:2.8rem, small:2.8rem, medium:2.8rem, large:2.8rem, );
+$h3_fs: (null:2.0rem, small:2.0rem, medium:2.0rem, large:2.0rem, );
+$subtitle_fs: (null:2.0rem, small:2.0rem, medium:2.0rem, large:2.0rem, );
+$body_fs: (null:1.4rem, small:1.4rem, medium:1.4rem, large:1.4rem, );
+$highlight_fs: (null:1.4rem, small:1.4rem, medium:1.4rem, large:1.4rem, );
+$pretitle_fs: (null:1.2rem, small:1.2rem, medium:1.2rem, large:1.2rem, );
+$link_fs: (null:1.4rem, small:1.4rem, medium:1.4rem, large:1.4rem, );
+$label_fs: (null:1.6rem, small:1.6rem, medium:1.6rem, large:1.6rem, );
 
 /* Font Styles */
-.heading1,
-h1 {
+.heading1, h1 {
     @include font-size($h1_fs);
     font-family: $heading_font;
     font-weight: 500;
 }
 
-.heading2,
-h2 {
+.heading2, h2 {
     @include font-size($h2_fs);
     font-family: $heading_font;
     font-weight: 400;
     letter-spacing: -0.02em;
 }
 
-.heading3,
-h3 {
+.heading3, h3 {
     @include font-size($h3_fs);
     font-family: $heading_font;
     font-weight: 500;
@@ -98,19 +40,14 @@ h3 {
     line-height: 140%;
 }
 
-.body,
-p {
+.body, p {
     @include font-size($body_fs);
     font-family: $body_font;
     font-weight: 200;
     line-height: 140%;
 }
 
-.bold,
-i,
-b,
-em,
-strong {
+.bold, i, b, em, strong {
     @extend .body;
     @include font-size($highlight_fs);
     font-weight: 300;
@@ -124,9 +61,7 @@ strong {
     text-transform: uppercase;
 }
 
-.link,
-a,
-button {
+.link, a, button {
     @include font-size($link_fs);
     font-family: $body_font;
     font-weight: 300;
@@ -134,8 +69,7 @@ button {
     text-transform: uppercase;
 }
 
-.label,
-label {
+.label, label {
     @include font-size($label_fs);
     font-family: $heading_font;
     font-weight: 400;

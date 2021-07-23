@@ -16,11 +16,10 @@
 
 /* Import component styles. */
 @import "components/burger";
+@import "components/copyright";
 @import "components/nav";
 
-
 /* For development: */
-
 * {
-    outline: .5px dashed red;
+    // outline: .5px dashed red;
 }
