@@ -1,10 +1,15 @@
-{{ $image := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+{{ $tmp := newScratch }}
+{{ if .IsNamedParams }}
+    {{ $tmp.Set "image" (.Page.Resources.GetMatch (printf "*%s*" (.Get "src"))) }}
+{{ else }}
+    {{ $tmp.Set "image" (resources.Get (.Get 0)) }}
+{{ end }}
+{{ $image := $tmp.Get "image" }}
 
-
-{{ $small_jpg := $image.Resize "500x jpg" }}
-{{ $small_webp := $image.Resize "500x webp" }}
-{{ $normal_jpg := $image.Resize "800x jpg" }}
-{{ $normal_webp := $image.Resize "800x webp" }}
+{{ $small_jpg := $image.Resize "1000x jpg" }}
+{{ $small_webp := $image.Resize "1000x webp" }}
+{{ $normal_jpg := $image.Resize "1600x jpg" }}
+{{ $normal_webp := $image.Resize "1600x webp" }}
 
 <figure>
     <picture>
