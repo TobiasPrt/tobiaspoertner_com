@@ -1,8 +1,19 @@
 /* CONTENT BLOCK */
 
 main {
+    width: 100%;
+    padding: 0 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
     // ViewportHeight - HeaderHeight - FooterHeight
     min-height: calc(100vh - 63px - 50px);
+
+    @include respond('small') {
+        padding: 0 48px;
+    }
 
     @include respond('medium') {
         min-height: calc(100vh - 84px - 50px);

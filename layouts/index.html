@@ -1,3 +1,8 @@
+
 {{ define "main" }}
-    {{.Content}}
+    <div class="hero">
+        <img class="hero__img" src="images/logo.svg" alt="wordmark logo">
+        <div class="hero__divider divider--horizlong"></div>
+        <p class="hero__subtitle">{{- .Content -}}</p>
+    </div>
 {{ end }}

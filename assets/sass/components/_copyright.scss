@@ -1,1 +1,21 @@
 /* COPYRIGHT INFORMATION IN FOOTER */
+.copyright {
+    font-family: $body_font;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: 0.045em;
+    text-align: center;
+    @include fg($grey);
+
+    &__link {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        text-align: inherit;
+        color: inherit;
+        text-transform: inherit;
+    }
+}

@@ -1,0 +1,24 @@
+/* HERO STYLES */
+.hero {
+    padding-bottom: 24px;
+
+    @include respond('medium') {
+        padding-bottom: 32px;
+    }
+
+    &__img {
+        max-width: 173px;
+
+        @include respond('medium') {
+            max-width: 259px;
+        }
+    }
+
+    &__divider {
+        margin: 24px 0;
+
+        @include respond('medium') {
+            margin: 32px 0;
+        }
+    }
+}
