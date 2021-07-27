@@ -28,3 +28,12 @@ button {
 ul, ol {
     list-style: none;
 }
+
+p:empty {
+    display: none;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}

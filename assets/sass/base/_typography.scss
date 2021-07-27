@@ -1,7 +1,7 @@
 /* TYPOGRAPHY */
 
 /* Font Sizes */
-$h1_fs: (null:3.2rem, small:3.2rem, medium:3.2rem, large:3.2rem, );
+$h1_fs: (null:3.2rem, small:3.2rem, medium:4.8rem, large:4.8rem, );
 $h2_fs: (null:2.8rem, small:2.8rem, medium:2.8rem, large:2.8rem, );
 $h3_fs: (null:2.0rem, small:2.0rem, medium:2.0rem, large:2.0rem, );
 $subtitle_fs: (null:2.0rem, small:2.0rem, medium:2.0rem, large:2.0rem, );
@@ -16,6 +16,7 @@ $label_fs: (null:1.6rem, small:1.6rem, medium:1.6rem, large:1.6rem, );
     @include font-size($h1_fs);
     font-family: $heading_font;
     font-weight: 500;
+    line-height: 100%;
 }
 
 .heading2, h2 {

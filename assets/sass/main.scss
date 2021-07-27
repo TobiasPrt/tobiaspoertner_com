@@ -21,6 +21,9 @@
 @import "components/hero";
 @import "components/nav";
 
+/* Import page specific styles. */
+@import "pages/about";
+
 /* For development: */
 * {
     // outline: .5px dashed red;

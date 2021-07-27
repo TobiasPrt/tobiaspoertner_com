@@ -1,6 +1,7 @@
 /* CONTENT BLOCK */
 
 main {
+    height: 100%;
     width: 100%;
     padding: 0 28px;
     display: flex;
@@ -8,14 +9,21 @@ main {
     justify-content: center;
     margin: 0 auto;
     max-width: 800px;
-    // ViewportHeight - HeaderHeight - FooterHeight
-    min-height: calc(100vh - 63px - 50px);
 
-    @include respond('small') {
-        padding: 0 48px;
-    }
+    // ViewportHeight - HeaderHeight - FooterHeight - FooterMargin
+    min-height: calc(100vh - 63px - 49px);
 
     @include respond('medium') {
-        min-height: calc(100vh - 84px - 50px);
+        min-height: calc(100vh - 84px - 49px);
     }
+}
+
+.wrapper {
+    @extend main;
+    margin-bottom: 49px;
+    padding: 0;
+}
+
+.content {
+    margin-bottom: 64px;
 }

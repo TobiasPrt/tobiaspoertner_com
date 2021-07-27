@@ -26,12 +26,27 @@
         @extend .divider;
         width: 0.5px;
         height: 16px;
+
+        @include respond('medium') {
+            height: 32px;
+        }
     }
 
-    &__vertlong {
+    &--vertlong {
         @extend .divider;
         width: 0.5px;
         height: 32px;
+    }
+
+    &--scroll {
+        position: absolute;
+        bottom: 16px;
+        left: calc(50% - 0.25px);
+
+        @include respond('medium') {
+            height: 32px;
+            bottom: 64px;
+        }
     }
 
 }

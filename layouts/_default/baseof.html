@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
     {{- partialCached "head/favicons.html" . -}}
-    {{- partialCached "head/metadata.html" . -}}
-    <title>{{- .Params.Title -}}</title>
+    {{- partial "head/metadata.html" . -}}
+    <title>{{- .Params.Title | default .Site.Title -}}</title>
     {{- partialCached "head/site-style.html" . -}}
     <body>
         {{- partialCached "header/site-header.html" . -}}
