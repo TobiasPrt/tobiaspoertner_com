@@ -5,24 +5,24 @@ draft: false
 author: "Tobias Pörtner"
 description: 
 keywords:
-tags:
+type: "case-study"
+readable_date: "Month YYYY"
+content_summary: 
 ---
+
+{{< img src="images/image1.jpg" >}}
 
 Summary
 
-<!--more-->
-
 First Paragraph
 
-{{< img src="images/image1.jpg" >}}
+{{< img src="images/image2.jpg" >}}
 
 ## Challenges
 
 Second Paragraph
 
-{{< img src="images/image2.jpg" >}}
-
-## Solutions
+## Review
 
 Third Paragraph
 

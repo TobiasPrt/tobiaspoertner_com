@@ -26,4 +26,8 @@ main {
 
 .content {
     margin-bottom: 64px;
+
+    &--single {
+        margin-top: calc(100vh - 63px - 48vh);
+    }
 }

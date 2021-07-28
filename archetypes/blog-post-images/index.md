@@ -1,9 +1,10 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
+title: "{{ "replace .TranslationBaseName "-" " "" | title }}"
 date: {{ .Date }}
 draft: false
 author: "Tobias Pörtner"
 description: 
+type: "post--image"
 keywords:
 tags:
 ---

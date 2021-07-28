@@ -1,4 +1,8 @@
 {{ define "main" }}
-jojo
-    {{.Content}}
+    <div class="content content--single">
+        <div class="{{ .Params.type }}">
+            <p class="post__pretitle">{{ .Params.Readable_date }}</p>
+            {{ .Content }}
+        </div>
+    </div>
 {{ end }}
