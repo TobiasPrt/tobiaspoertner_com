@@ -1,60 +1,107 @@
 /* STYLES FOR CASE STUDY single */
 .case-study {
-    &__pretitle {
+    & > .pretitle {
         @extend .pretitle;
         text-align: right;
         margin-bottom: 16px;
     }
 
-    & figure:nth-of-type(1) {
+    &__img {
         background-color: $off_white;
-        padding: 24px 32px 24px;
+        max-height: 700px;
+        
+        &--hero {
+            @extend .case-study__img !optional;
+            padding: 24px 32px 24px;
+            margin: auto;
+            height: 200px;
+
+            @include respond('medium') {
+                height: 220px;
+                text-align: center;
+                & * {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+
+            @media screen and (min-width: 1600px) {
+                height: 384px;
+            }
+        }
+
+        &--full {
+            @extend .case-study__img !optional;
+
+            @include respond('large') {
+            }
+        }
+
+        &--padding {
+            @extend .case-study__img !optional;
+            padding: 24px 32px 24px;
+
+            @include respond('large') {
+                padding: 48px 64px 48px;
+            }
+        }
     }
 
+    
+
+    & h1 {
+        line-height: 49px;
+        margin-bottom: 32px;
+
+        @include respond('medium') {
+            line-height: 73px;
+        }
+    }
+
+    & h2 {
+        line-height: 30.4px;
+        margin: 64px auto 32px;
+
+        @include respond('medium') {
+            margin-top: 96px;
+        }
+    }
+
+    /* tags */
     & > ul {
         display: flex;
         column-gap: 16px;
-        margin: 16px auto 8px;
+        margin-top: 16px;
+        margin-bottom: 8px;
     }
 
     & ul > li {
         @extend .pretitle;
     }
 
-    & h1:nth-of-type(1) {
-        margin-bottom: 32px;
-        line-height: 49px;
-    }
-
-    & p:nth-of-type(2) {
+    &__summary {
+        font-size: 1.6rem;
         margin-bottom: 64px;
-    }
 
-    & p:nth-of-type(3) {
+        @include respond('medium') {
+            font-size: 2rem;
+            margin-bottom: 96px;
+        }
+    }
+    
+
+    & > p {
         margin-bottom: 32px;
+
+        @include respond('medium') {
+            margin-bottom: 64px;
+        }
     }
 
-    & figure:nth-of-type(2) {
-        background-color: $off_white;
-        margin-bottom: 64px;
+    &__link {
+        @extend .body;
+        text-transform: none;
+        text-decoration: underline;
     }
-
-    & h2 {
-        margin-bottom: 32px;
-        line-height: 30.4px;
-    }
-
-    & p:nth-of-type(4) {
-        margin-bottom: 16px;
-    }
-
-    & p:nth-of-type(5) {
-        margin-bottom: 64px;
-    }
-
-    & figure:nth-of-type(3) {
-        background-color: $off_white;
-        margin-top: 32px;
-        padding: 24px 32px 24px;
-    }
+    
 }

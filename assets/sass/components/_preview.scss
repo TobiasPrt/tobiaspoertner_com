@@ -1,0 +1,35 @@
+.preview {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+
+    &__date {
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        line-height: 43px;
+        margin-bottom: 32px;
+    }
+
+    &__imagewrapper {
+        display: block;
+        background-color: $off-white;
+        height: 192px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__image {
+        padding: 24px 0;
+        height: 100%;
+        width: auto;
+    }
+
+    &__summary {
+        margin-top: 32px;
+    }
+
+    &__divider {
+        margin: 64px auto;
+    }
+}

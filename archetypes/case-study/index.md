@@ -1,22 +1,27 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
+title: "Title - Tobias Pörtner"
 date: {{ .Date }}
 draft: false
 author: "Tobias Pörtner"
 description: 
 keywords:
 type: "case-study"
+project_name: "name"
 readable_date: "Month YYYY"
 content_summary: 
 ---
 
-{{< img src="images/image1.jpg" >}}
+<img src="images/first.svg" class="case-study__img--hero" alt="hero image">
 
-Summary
+- Tags
+
+# Title
+
+<p class="case-study__summary">Short summary</p>
 
 First Paragraph
 
-{{< img src="images/image2.jpg" >}}
+<img src="images/second.svg" class="case-study__img--padding" alt="banner image">
 
 ## Challenges
 
@@ -26,4 +31,4 @@ Second Paragraph
 
 Third Paragraph
 
-{{< img src="images/image3.jpg" >}}
+<img src="images/third.svg" class="case-study__hero--full" alt="stats image">

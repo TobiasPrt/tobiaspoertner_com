@@ -8,7 +8,36 @@
         </div>
     </div>
 
-    <div id="about" class="content">
-        {{ .Content }}
+    <div id="{{- delimit (last 1 (split .Params.page_title " ")) "" -}}" class="content--list">
+
+        <ul>
+
+            {{ $list := .Pages }}
+            {{ $len := len $list }}
+            {{ range $index, $element := $list  }}
+            
+                <li class="preview">
+                    
+                    <p class="preview__date">{{- .Params.readable_date -}}</p>
+                    
+                    <h2 class="preview__title">
+                        <a href="{{.Permalink}}">{{- .Params.project_name -}}</a>
+                    </h2>
+                    
+                    <a class="preview__imagewrapper" href="{{.Permalink}}">
+                        <img class="preview__image" src="{{- .Permalink -}}/images/first.svg" alt="Preview Image for {{ .Params.project_name }}">
+                    </a>
+                    
+                    <p class="preview__summary">{{- .Params.content_summary -}}</p>
+                </li>
+                {{ if ne (add $index 1) $len }}
+                    <div class="preview__divider divider--vertlong"></div>
+                {{ else }}
+                    <div class="preview__divider divider--horizshort"></div>
+                {{ end }}
+            
+
+            {{ end }}
+        </ul>
     </div>
 {{ end }}

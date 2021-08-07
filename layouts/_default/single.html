@@ -1,8 +1,9 @@
 {{ define "main" }}
-    <div class="content content--single">
+    <div class="content--single">
         <div class="{{ .Params.type }}">
-            <p class="post__pretitle">{{ .Params.Readable_date }}</p>
-            {{ .Content }}
+            <p class="pretitle">{{ .Params.Readable_date }}</p>
+            {{ .Content | safeHTML }}
         </div>
+        <button class="content__button" type="button" onclick="javascript:history.back()">Go Back</button>
     </div>
 {{ end }}

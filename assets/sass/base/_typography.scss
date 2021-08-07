@@ -4,33 +4,45 @@
 $h1_fs: (null:3.2rem, small:3.2rem, medium:4.8rem, large:4.8rem, );
 $h2_fs: (null:2.8rem, small:2.8rem, medium:2.8rem, large:2.8rem, );
 $h3_fs: (null:2.0rem, small:2.0rem, medium:2.0rem, large:2.0rem, );
-$subtitle_fs: (null:2.0rem, small:2.0rem, medium:2.0rem, large:2.0rem, );
+$h4_fs: (null:1.8rem, small:1.8rem, medium:1.8rem, large:1.8rem, );
+$subtitle_fs: (null:1.6rem, small:1.6rem, medium:1.8rem, large:1.8rem, );
 $body_fs: (null:1.4rem, small:1.4rem, medium:1.6rem, large:1.6rem, );
-$highlight_fs: (null:1.4rem, small:1.4rem, medium:1.4rem, large:1.4rem, );
+$highlight_fs: (null:1.4rem, small:1.4rem, medium:1.6rem, large:1.6rem, );
 $pretitle_fs: (null:1.2rem, small:1.2rem, medium:1.2rem, large:1.2rem, );
 $link_fs: (null:1.4rem, small:1.4rem, medium:1.4rem, large:1.4rem, );
 $label_fs: (null:1.6rem, small:1.6rem, medium:1.6rem, large:1.6rem, );
 
 /* Font Styles */
-.heading1, h1 {
+.heading1, h1, h1 > a {
     @include font-size($h1_fs);
     font-family: $heading_font;
     font-weight: 500;
     line-height: 100%;
+    text-transform: none;
 }
 
-.heading2, h2 {
+.heading2, h2, h2 > a {
     @include font-size($h2_fs);
     font-family: $heading_font;
     font-weight: 400;
     letter-spacing: -0.02em;
+    text-transform: none;
 }
 
-.heading3, h3 {
+.heading3, h3, h3 > a {
     @include font-size($h3_fs);
     font-family: $heading_font;
     font-weight: 500;
     letter-spacing: -0.02em;
+    text-transform: none;
+}
+
+.heading4, h4, h4 > a {
+    @include font-size($h4_fs);
+    font-family: $heading_font;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-transform: none;
 }
 
 .subtitle {

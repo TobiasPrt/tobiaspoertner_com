@@ -6,22 +6,22 @@
 {{ end }}
 {{ $image := $tmp.Get "image" }}
 
-{{ $small_jpg := $image.Resize "1000x jpg" }}
-{{ $small_webp := $image.Resize "1000x webp" }}
-{{ $normal_jpg := $image.Resize "1600x jpg" }}
-{{ $normal_webp := $image.Resize "1600x webp" }}
+{{ $small_jpg := $image.Resize "1000x png text q100" }}
+{{ $small_webp := $image.Resize "1000x webp text q100" }}
+{{ $normal_jpg := $image.Resize "1600x png text q100" }}
+{{ $normal_webp := $image.Resize "1600x webp text q100" }}
 
 <figure>
     <picture>
         <source type="image/webp"
             srcset="
                 {{ $small_webp.RelPermalink }} 500w, 
-                {{ $normal_webp.RelPermalink }} 800w" 
+                {{ $normal_webp.RelPermalink }} 10R00w" 
             sizes="(max-width: 556px) calc(100vw - 56px), 800px">
         <img 
             srcset="
                 {{ $small_jpg.RelPermalink }} 500w, 
-                {{ $normal_jpg.RelPermalink }} 800w" 
+                {{ $normal_jpg.RelPermalink }} 1000w" 
             sizes="(max-width: 556px) calc(100vw - 56px), 800px" 
             src="{{ $normal_jpg.RelPermalink }}"
             alt="{{.Get `alt` }}"

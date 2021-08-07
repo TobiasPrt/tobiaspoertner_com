@@ -9,13 +9,13 @@
     @include fg($grey);
 
     &__link {
+        color: $grey !important;
         font-family: inherit;
         font-size: inherit;
         font-weight: inherit;
         line-height: inherit;
         letter-spacing: inherit;
         text-align: inherit;
-        color: inherit;
         text-transform: inherit;
     }
 }

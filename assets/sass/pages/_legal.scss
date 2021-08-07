@@ -1,0 +1,78 @@
+#Legal {
+    & h2 {
+        margin-bottom: 32px;
+
+        @include respond('medium') {
+            margin-bottom: 48px;
+        }
+
+        &:not(first-of-type) {
+            margin-top: 48px;
+
+            @include respond('medium') {
+                margin-top: 96px;
+            }
+        }
+
+
+    }
+
+    & h3 {
+        margin: 24px auto;
+
+        @include respond('medium') {
+            margin: 32 auto;
+        }
+    }
+
+    & h4 {
+        margin: 16px auto;
+
+        @include respond('medium') {
+            margin: 24px auto;
+        }
+    }
+
+    & p {
+        margin-bottom: 8px;
+
+        @include respond('medium') {
+            margin-bottom: 12px;
+        }
+    }
+
+    & ul {
+        padding-left: 24px;
+    }
+
+    & li {
+        @extend .body;
+        margin-bottom: 8px;
+
+        @include respond('medium') {
+            margin-bottom: 12px;
+        }
+
+        &:before {
+            content: "-";
+            margin-left: -20px;
+            margin-right: 14px;
+        }
+    }
+
+    & strong {
+        display: block;
+        margin: 16px auto 8px;
+
+        @include respond('medium') {
+            margin: 24px auto 12px;
+        }
+    }
+
+    & a {
+        @extend .body;
+        text-transform: none;
+        text-decoration: underline;
+        overflow-wrap: break-word;
+    }
+}

@@ -2,6 +2,11 @@
 .hero {
     padding-bottom: 24px;
 
+    @media screen and (min-width: 1600px) {
+        margin-left: 112px;
+        margin-right: 112px;
+    }
+
     @include respond('medium') {
         padding-bottom: 32px;
     }

@@ -16,6 +16,10 @@ main {
     @include respond('medium') {
         min-height: calc(100vh - 84px - 49px);
     }
+
+    @media screen and (min-width: 1600px) {
+        max-width: 1024px;
+    }
 }
 
 .wrapper {
@@ -26,8 +30,28 @@ main {
 
 .content {
     margin-bottom: 64px;
+    width: 100%;
 
     &--single {
+        @extend .content;
         margin-top: calc(100vh - 63px - 48vh);
+
+        @include respond('large') {
+            margin-top: calc(100vh - 63px - 56vh);
+        }
+    }
+
+    &--list {
+        @extend .content;
+        margin-top: 32px;
+    }
+
+    &__button {
+        display: block;
+        margin: 64px auto 32px;
+
+        @include respond('medium') {
+            margin: 96px auto 64px;
+        }
     }
 }
