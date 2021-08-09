@@ -24,7 +24,7 @@
     
     &--vertshort {
         @extend .divider;
-        width: 0.5px;
+        width: 1px;
         height: 16px;
 
         @include respond('medium') {
@@ -34,7 +34,7 @@
 
     &--vertlong {
         @extend .divider;
-        width: 0.5px;
+        width: 1px;
         height: 32px;
     }
 

@@ -12,7 +12,7 @@ readable_date: "April 2021"
 content_summary: "During my thesis I designed, developed and deployed a new website for a mobile communications company, which focuses on sustainable solutions for individuals. The website was implemented using custom WordPress functionality as well as a custom designed theme."
 ---
 
-<img src="images/smartphoniker-de-first.svg" class="case-study__img--hero" alt="hero image">
+<img src="images/smartphoniker-de_preview_image.png" class="case-study__img--hero" alt="Preview of smartphoniker.de on different devices">
 
 - Design
 - WordPress
@@ -26,7 +26,7 @@ content_summary: "During my thesis I designed, developed and deployed a new webs
 Smartphoniker GmbH is a local mobile communications company from northern germany, which focuses on sustainable solutions for individuals. Their services include repair of devices, sustainable accessories, mobile phone contracts and purchasing, refurbishing and selling used devices to their customers.
 The objective for this project was to create a newly designed website that better matches their business values. Other requirements encompass an improved performance compared to the old website, easy content administration for non-developers, more effective call-to-actions and conversion of online visitors to local paying customers.
 
-<img src="images/smartphoniker-de-second.svg" class="case-study__img--full" alt="banner image">
+<img src="images/smartphoniker-de_banner.png" class="case-study__img--full" alt="Banner previewing the mobile version of the website">
 
 ## Challenges
 

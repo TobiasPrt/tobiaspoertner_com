@@ -11,7 +11,7 @@ readable_date: "June 2020"
 content_summary: "This project is a simple shop-system for offering smartphone repairs for a wide range of manufacturers and devices. I was responsible for the design and development of the frontend. The website was implemented using a custom Flask-Server with the Jinja2 Template Engine and a PostgresSQL database."
 ---
 
-<img src="images/smartphoniker-shop-first.svg" class="case-study__img--hero" alt="hero image">
+<img src="images/smartphoniker-shop_preview_image.png" class="case-study__img--hero" alt="Preview of smartphoniker.shop on different devices">
 
 - Design
 - JavaScript
@@ -26,7 +26,7 @@ The client Smartphoniker GmbH is a local mobile communications company based in 
 The objective for this project was to lift weight of the workers in the stores by moving the process of retrieving price and device information online in an easy-to-use interface for potential customers. Other requirements were good performance and easy content maintainability for non-developers. The design should also respect the companies colors and style. A requirement which came up during implementation was to add a searchable FAQ section.
 <a class="case-study__link" href="https://leonmortenrichter.de">Leon Morten Richter</a>, a backend engineer, and I did this project together. He was responsible for the server-side logic, deployment and code review. My role included to designing the interface, creating the templates using Jinja2, implementing vanilla JavaScript UI interactions and occasionally building some smaller backend functionality.
 
-<img src="images/smartphoniker-shop-second.svg" class="case-study__img--full" alt="banner image">
+<img src="images/smartphoniker-shop_banner.png" class="case-study__img--full" alt="Banner showing landing page on mobile device">
 
 ## Challenges
 

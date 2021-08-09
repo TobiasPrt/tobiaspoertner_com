@@ -9,6 +9,7 @@
     &__img {
         background-color: $off_white;
         max-height: 700px;
+        object-fit: contain;
         
         &--hero {
             @extend .case-study__img !optional;
@@ -19,6 +20,7 @@
             @include respond('medium') {
                 height: 220px;
                 text-align: center;
+
                 & * {
                     height: 100%;
                     width: auto;
