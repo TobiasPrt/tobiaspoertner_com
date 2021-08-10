@@ -19,12 +19,14 @@
 @import "components/case-study";
 @import "components/copyright";
 @import "components/divider";
+@import "components/form";
 @import "components/hero";
 @import "components/nav";
 @import "components/preview";
 
 /* Import page specific styles. */
 @import "pages/about";
+@import "pages/contact";
 @import "pages/legal";
 
 /* For development: */
