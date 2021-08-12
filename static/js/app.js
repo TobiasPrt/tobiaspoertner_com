@@ -1,4 +1,6 @@
-import { bindNavigationEventHandler } from './navigation/index.js';
+import { bindNavigationEventHandler } from './navigation/navigationHandler.js';
+import { bindContactFormHandler } from './form/contactFormHandler.js';
 
 
 bindNavigationEventHandler();
+bindContactFormHandler();

@@ -42,6 +42,7 @@
         position: absolute;
         bottom: 16px;
         left: calc(50% - 0.25px);
+        animation: 'MoveUpDown' 2s ease-in-out infinite;
 
         @include respond('medium') {
             height: 32px;
@@ -49,4 +50,20 @@
         }
     }
 
+}
+
+@keyframes MoveUpDown {
+    0% {
+        transform: translate(0, -10px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 30px);
+        opacity: 0;
+    }
 }

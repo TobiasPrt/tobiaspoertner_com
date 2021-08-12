@@ -5,6 +5,12 @@
     <title>{{- .Params.Title | default .Site.Title -}}</title>
     {{- partialCached "head/site-style.html" . -}}
     <body>
+        <div id="cookies-eu-banner" style="display: none">
+            <p>By continuing to visit this site, you accept the use of cookies by Google Analytics for statistical purposes. Find out about how we take care for your data <a href="/legal" id="cookies-eu-more">here</a>.</p>
+            
+            <button id="cookies-eu-reject">Reject</button>
+            <button id="cookies-eu-accept">Accept</button>
+        </div>
         {{- partialCached "header/site-header.html" . -}}
         <main id="content">
         {{- block "main" . }}{{- end }}

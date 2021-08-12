@@ -1,5 +1,5 @@
 ---
-title: "Legal - Tobias Pörtner"
+title: "Contact - Tobias Pörtner"
 draft: false
 post: false
 description:
