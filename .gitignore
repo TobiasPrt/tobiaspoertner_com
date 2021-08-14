@@ -1,0 +1,6 @@
+# For Hugo
+/public/
+/resources/_gen/
+
+# For MacOS
+.DS_Store
