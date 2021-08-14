@@ -2,24 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://tobiaspoertner.com/about/</loc>
-    <priority>0</priority>
-  </url><url>
-    <loc>http://tobiaspoertner.com/contact/</loc>
-    <priority>0</priority>
-  </url><url>
-    <loc>http://tobiaspoertner.com/legal/</loc>
-    <priority>0</priority>
-  </url><url>
     <loc>http://tobiaspoertner.com/work/</loc>
-    <priority>0</priority>
+    <lastmod>2021-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://tobiaspoertner.com/blog/</loc>
+    <loc>http://tobiaspoertner.com/</loc>
+    <lastmod>2021-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://tobiaspoertner.com/work/smartphoniker-de/</loc>
+    <lastmod>2021-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://tobiaspoertner.com/work/mate-app/</loc>
+    <lastmod>2020-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://tobiaspoertner.com/about/</loc>
   </url><url>
     <loc>http://tobiaspoertner.com/categories/</loc>
   </url><url>
-    <loc>http://tobiaspoertner.com/</loc>
+    <loc>http://tobiaspoertner.com/contact/</loc>
+  </url><url>
+    <loc>http://tobiaspoertner.com/legal/</loc>
   </url><url>
     <loc>http://tobiaspoertner.com/tags/</loc>
+  </url><url>
+    <loc>http://tobiaspoertner.com/work/smartphoniker-shop/</loc>
   </url>
 </urlset>
