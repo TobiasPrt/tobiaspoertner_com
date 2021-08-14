@@ -20,4 +20,4 @@ During my bachelors degree in Multimedia Production at the University of Applied
 {{< link href="https://www.linkedin.com/in/tobiaspoertner/" >}} LinkedIn {{< /link >}}
 {{< link href="https://github.com/TobiasPrt" >}} Github {{< /link >}}
 {{< link href="../work" >}} My Work {{< /link >}}
-{{< link href="../cv" >}} CV {{< /link >}}
+{{< link href="/pdf/cv.pdf" >}} CV {{< /link >}}
