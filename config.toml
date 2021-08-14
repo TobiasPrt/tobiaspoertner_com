@@ -23,11 +23,11 @@ title = "Personal Website of Tobias Pörtner"
         name = "Work"
         url = "/work"
         weight = 3
-    [[menu.main]]
-        identifier = "blog"
-        name = "Blog"
-        url = "/blog"
-        weight = 4
+    # [[menu.main]]
+    #     identifier = "blog"
+    #     name = "Blog"
+    #     url = "/blog"
+    #     weight = 4
     [[menu.main]]
         identifier = "contact"
         name = "Contact"

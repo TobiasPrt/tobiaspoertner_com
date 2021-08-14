@@ -26,6 +26,9 @@
                     
                     <a class="preview__imagewrapper" href="{{.Permalink}}">
                         <img class="preview__image" src='{{- .Permalink -}}/images/{{- delimit (last 2 (split .File.Dir "/")) "" -}}_preview_image.png' alt="Preview Image for {{ .Params.project_name }}">
+                        <div class="preview__hover">
+                            <p>See Details</p>
+                        </div>
                     </a>
                     
                     <p class="preview__summary">{{- .Params.content_summary -}}</p>

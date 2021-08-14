@@ -11,7 +11,7 @@
             <button id="cookies-eu-reject">Reject</button>
             <button id="cookies-eu-accept">Accept</button>
         </div>
-        {{- partialCached "header/site-header.html" . -}}
+        {{- partial "header/site-header.html" . -}}
         <main id="content">
         {{- block "main" . }}{{- end }}
         </main>
