@@ -31,9 +31,20 @@
         }
     }
 
+    &__captcha {
+        margin: 0 auto;
+
+        @include respond('medium') {
+            grid-column-start: span 2;
+            grid-column-end: 3;
+            margin-bottom: 32px;
+        }
+    }
+
     &__button {
         margin: 0 auto;
-        height: 20px;
+        height: 78px;
+        cursor: pointer;
 
         @include respond('medium') {
             grid-column-start: span 2;
@@ -44,7 +55,6 @@
     &__error {
         color: red;
         width: 100%;
-        margin-bottom: 32px;
 
         @include respond('medium') {
             grid-column-start: span 2;

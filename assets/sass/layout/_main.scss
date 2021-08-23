@@ -49,6 +49,7 @@ main {
     &__button {
         display: block;
         margin: 64px auto 32px;
+        cursor: pointer;
 
         @include respond('medium') {
             margin: 96px auto 64px;

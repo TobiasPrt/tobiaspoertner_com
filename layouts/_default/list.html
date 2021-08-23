@@ -31,7 +31,7 @@
                         </div>
                     </a>
                     
-                    <p class="preview__summary">{{- .Params.content_summary -}}</p>
+                    <a href="{{.Permalink}}" class="preview__summary">{{- .Params.content_summary -}}..</a>
                 </li>
                 {{ if ne (add $index 1) $len }}
                     <div class="preview__divider divider--vertlong"></div>

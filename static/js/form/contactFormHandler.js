@@ -12,7 +12,9 @@ export const bindContactFormHandler = () => {
 const handleContactForm = (event) => {
     event.preventDefault();
 
-    validateInput();
+    if (!validateInput()) {
+        return;
+    }
 
     toggleLoading();
 
@@ -29,7 +31,10 @@ const validateInput = () => {
 
     if (!(name && email && message)) {
         onFormError('Make sure to fill in the required fields.')
+        return false;
     }
+
+    return true;
 }
 
 /**

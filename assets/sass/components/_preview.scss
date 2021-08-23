@@ -89,7 +89,10 @@
     }
 
     &__summary {
+        @extend .body;
         margin-top: 32px;
+        text-transform: none;
+        letter-spacing: 0;
 
         @include respond('medium') {
             margin-top: 0;
